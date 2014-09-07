@@ -10,8 +10,9 @@
           <div class="row">
 
                   <?php
+                  error_reporting(0);
                 include "setting/conf.php";
-                $query = "select * from kategori";
+                $query = "select * from kategori where nama_kat!='Telepon Penting' AND nama_kat!='Pelayanan Lain'";
                   $hasil = mysql_query($query);
                   while ($qtabel = mysql_fetch_assoc($hasil))
                       {

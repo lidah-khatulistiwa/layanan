@@ -9,6 +9,14 @@
               ?>
                
                 <?php include "library/js.html" ?>
+
+                <?php 
+                break;
+                case 'layanan-detail2':
+                  if(!file_exists("library/js.html")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "library/js.html" ?>
                 
               
              

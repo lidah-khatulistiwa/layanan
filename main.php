@@ -1,4 +1,7 @@
-<?php include "library/header.php" ?>
+<?php 
+  include "library/header.php";
+  error_reporting(0);
+?>
 <body>
 <div id="wrapper">
   <div id="header_top">
@@ -10,18 +13,8 @@
     <?php include "library/sys.php" ?>
   </div>
   <div id="content">
-    <div class="now_page gap">
-      <div class="container">
-        <div class="content_box">
-          <br>
-          <center><img src="images/satu.png"></center>
-        </div>
-        <div class="sep_small"></div>
-      </div>
-    </div>
-    <!-- #now_page -->
-    
-  <?php include "library/system.php" ?>
+    <hr>
+    <?php include "library/system.php" ?>
   </div>
   <!-- #content--> 
   

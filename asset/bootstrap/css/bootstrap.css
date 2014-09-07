@@ -702,7 +702,7 @@ a.muted:focus {
 
 a.text-warning:hover,
 a.text-warning:focus {
-  color: #ed3c3c;
+  color: #21252b;
 }
 
 .text-error {
@@ -3298,6 +3298,7 @@ button.close {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  height: 50px
 }
 
 .btn-large [class^="icon-"],
@@ -3396,15 +3397,15 @@ input[type="button"].btn-block {
 .btn-warning {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ed3c3c;
-  *background-color: #ed3c3c;
-  background-image: -moz-linear-gradient(top, #ed3c3c, #ed3c3c);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ed3c3c), to(#ed3c3c));
-  background-image: -webkit-linear-gradient(top, #ed3c3c, #ed3c3c);
-  background-image: -o-linear-gradient(top, #ed3c3c, #ed3c3c);
-  background-image: linear-gradient(to bottom, #ed3c3c, #ed3c3c);
+  background-color: #21252b;
+  *background-color: #21252b;
+  background-image: -moz-linear-gradient(top, #21252b, #21252b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#21252b), to(#21252b));
+  background-image: -webkit-linear-gradient(top, #21252b, #21252b);
+  background-image: -o-linear-gradient(top, #21252b, #21252b);
+  background-image: linear-gradient(to bottom, #21252b, #21252b);
   background-repeat: repeat-x;
-  border-color: #ed3c3c #ed3c3c #ed3c3c;
+  border-color: #21252b #21252b #21252b;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
@@ -3417,13 +3418,13 @@ input[type="button"].btn-block {
 .btn-warning.disabled,
 .btn-warning[disabled] {
   color: #ffffff;
-  background-color: #ed3c3c;
-  *background-color: #ed3c3c;
+  background-color: #21252b;
+  *background-color: #21252b;
 }
 
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #ed3c3c \9;
+  background-color: #21252b \9;
 }
 
 .btn-danger {

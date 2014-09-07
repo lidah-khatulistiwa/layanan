@@ -15,15 +15,15 @@ $password = mysql_real_escape_string($password);
 //cek data yang dikirim, apakah kosong atau tidak
 if (empty($username) && empty($password)) {
 	//kalau username dan password kosong
-	header('location:../dulor/login.php');
+	echo '<script>window.location.assign("../dulor/login.php")</script>';
 	break;
 } else if (empty($username)) {
 	//kalau username saja yang kosong
-	header('location:../dulor/login.php');
+	echo '<script>window.location.assign("../dulor/login.php")</script>';
 	break;
 } else if (empty($password)) {
 	//kalau password saja yang kosong
-	header('location:../dulor/login.php');
+	echo '<script>window.location.assign("../dulor/login.php")</script>';
 	break;
 }
 
@@ -41,9 +41,9 @@ if (mysql_num_rows($q) == 1) {
 
 	
 	//redirect ke halaman index
-	header('location:../dulor/dashboard.php?hal=home');
+	echo '<script>window.location.assign("../dulor/dashboard.php?hal=home")</script>';
 } else {
 	//kalau username ataupun password tidak terdaftar di database
-	header('location:../dulor/login.php');
+	echo '<script>window.location.assign("../dulor/login.php")</script>';
 }
 ?>

@@ -10,7 +10,21 @@
                
                 <?php include "pages/dashboard.php" ?>
                 
-              
+              <?php 
+                break;
+                case 'pencarianx':
+                  if(!file_exists("pages/cari.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "pages/cari.php" ?>
+
+                <?php 
+                break;
+                case 'telepon':
+                  if(!file_exists("pages/telepon-penting.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "pages/telepon-penting.php" ?>
               
                 <?php 
                 break;
@@ -27,6 +41,15 @@
                     die ("Halaman tidak tersedia");
               ?>
                 <?php include "pages/layanan-kategori.php" ?>
+
+                <?php 
+                break;
+                case 'layanan-kategori2':
+                  if(!file_exists("pages/layanan-kategori2.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "pages/layanan-kategori2.php" ?>
+
 
 
 
@@ -45,6 +68,14 @@
                     die ("Halaman tidak tersedia");
               ?>
                 <?php include "pages/layanan-detail.php" ?>
+
+                <?php 
+                break;
+                case 'layanan-detail2':
+                  if(!file_exists("pages/layanan-detail2.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "pages/layanan-detail2.php" ?>
 
                 <?php 
                 break;

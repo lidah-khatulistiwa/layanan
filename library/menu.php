@@ -1,15 +1,35 @@
-    <div class="row container">
-      <div class="pull-left">
+    <div class="row container-fluid header_bh">
+      <div class="pull-left aww col-xs-6">
         <p>
+          <i class="pi-header-block-icon icon-phone pi-icon-base pi-icon-square"></i>
           Telepon: 
-          <?php
-          include "setting/conf.php";
-              $query = mysql_query("select * from setting");
-              while ($buff = mysql_fetch_array($query)) 
-              { echo $buff['telp_set']; }
-          ?>
+          <strong>
+            <?php
+            include "setting/conf.php";
+                $query = mysql_query("select * from setting");
+                while ($buff = mysql_fetch_array($query)) 
+                { echo $buff['telp_set']; }
+            ?>
+          </strong>
         </p>
       </div>
+
+      <div class="pull-left">
+        <p>
+          <i class="pi-header-block-icon icon-phone pi-icon-base pi-icon-square"></i>
+          E-Mail: 
+          <strong>
+            <?php
+            include "setting/conf.php";
+                $query = mysql_query("select * from setting");
+                while ($buff = mysql_fetch_array($query)) 
+                { echo $buff['email_set']; }
+            ?>
+          </strong>
+        </p>
+      </div>
+
+
     </div>
   </div>
   <!-- #header_top-->
@@ -39,7 +59,7 @@
                     <ul>
                       <?php
                         include "setting/conf.php";
-                        $query = "select * from kategori";
+                        $query = "select * from kategori where nama_kat!='Telepon Penting' AND nama_kat!='Pelayanan Lain'";
                               $hasil = mysql_query($query);
                               while ($qtabel = mysql_fetch_assoc($hasil))
                                   {
@@ -48,15 +68,15 @@
                       ?>
                     </ul>
                   </li>
-                  <li><a href="#" class="menu_navigation"><span>Nomer Darurat</span></a></li>
+                  <li><a href="main.php?hal=telepon" class="menu_navigation"><span>Nomer Darurat</span></a></li>
                   <li><a href="main.php?hal=kontak" class="menu_navigation"><span>Kontak Kami</span></a></li>
                 </ul>
               </div>
             </div>
-            <form class="navbar-search pull-right" id="search" action="#" method="get">
+            <form class="navbar-search pull-right" name="formcari" id="search" action="main.php?hal=pencarianx" method="post">
               <div class="input-append">
-                <input type="text" class="span2 input-search" placeholder="Search:">
-                <button type="submit" class="search-submit btn"><i class="icon-search"></i></button>
+                <input type="text" name="jenis_layanan" class="span2 input-search" placeholder="Search:">
+                <button type="submit" name="submit" class="search-submit btn"><i class="icon-search"></i></button>
               </div>
             </form>
           </div>

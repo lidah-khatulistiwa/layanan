@@ -14,9 +14,11 @@
 <meta name="description" content="Sistem Informasi Pelayanan Daerah - Pemerintah Daerah Kabupaten Ketapang" />
 <meta name="author" content="Feri Harjulianto">
 <!-- Mobile Specific Metas  ================================================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="asset/css/style.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="asset/style.css" type="text/css">
 <link rel="stylesheet" href="asset/css/jcarousel_skin.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="asset/preloader/css/preloader.css"  />
 <link rel="stylesheet" type="text/css" href="asset/prettyPhoto/css/prettyPhoto.css" />
@@ -37,6 +39,8 @@
 <!-- DC OneByOne Slider JS -->
 <script src="asset/sliders/onebyone/js/jquery.onebyone.js"></script>
 <script src="asset/sliders/onebyone/js/jquery.touchwipe.min.js"></script>
+
+
 
 <?php include "sys-js.php" ?>
 

@@ -1,4 +1,4 @@
-<?php
+<?php 
 error_reporting(0);
 include "setting/conf.php"; 
 $kat_layanan = $_GET['kat_layanan'];
@@ -26,7 +26,7 @@ $data = mysql_fetch_array($query);
                     $hasil = mysql_query($query);
                     while ($qtabel = mysql_fetch_assoc($hasil))
                       {
-                        echo '<div class="span4"><p><a href="main.php?hal=layanan-detail&id_layanan='.$qtabel['id_layanan'].'" class="btn btn-large btn-warning">'.$qtabel['jenis_layanan'].'</a></p></div>';
+                        echo '<div class="span4"><p><a href="main.php?hal=layanan-detail2&id_layanan='.$qtabel['id_layanan'].'" class="btn btn-large btn-warning">'.$qtabel['jenis_layanan'].'</a></p></div>';
                       }
                   ?>
           </div>

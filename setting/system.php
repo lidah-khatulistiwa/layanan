@@ -17,6 +17,14 @@
                     die ("Halaman tidak tersedia");
               ?>
                 <?php include "pages/blog-view.php" ?>
+
+                <?php 
+                break;
+                case 'pencarianx':
+                  if(!file_exists("pages/cari.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "pages/cari.php" ?>
                             
               <?php 
                 break;

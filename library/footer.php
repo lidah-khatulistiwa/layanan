@@ -11,7 +11,7 @@ $data = mysql_fetch_array($query);
     <div class="cols">
       <div class="row">
         <div class="span3 copyright">
-          <h4>SISFOPEDA</h4>
+          <h4>LAYANAN KETAPANG</h4>
             <p><a href="main.php?hal=tentang">Tentang Layanan</a></p>
             <p><a href="main.php?hal=tentang">Bagi Unsur Pemerintah</a></p>
             <p><a href="main.php?hal=tentang">Bagi Unsur Masyarakat</a></p>
