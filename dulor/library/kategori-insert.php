@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include('../../setting/conf.php');
 
 $kondisi1 ='';
@@ -16,7 +17,7 @@ $simpan = "INSERT INTO kategori SET 	nama_kat='$_POST[nama_kat]'
 $simpan2 = mysql_query("INSERT INTO kategori VALUES ('$kondisi_to_sql')");
 
 mysql_query($simpan);
+echo '<script>window.location.assign("../dashboard.php?hal=kategori")</script>';
 
-header('location:../dashboard.php?hal=kategori');
 
 ?>

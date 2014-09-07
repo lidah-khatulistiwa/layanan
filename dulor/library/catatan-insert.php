@@ -11,6 +11,7 @@ $catatan = $_POST['catatan'];
 $query = mysql_query("update catatan set catatan='$catatan' where id_catatan='$id_catatan'") or die(mysql_error());
 
 if ($query) {
-	header('location:../dashboard.php?hal=home');
+	echo '<script>window.location.assign("../dashboard.php?hal=home")</script>';
+
 }
 ?>

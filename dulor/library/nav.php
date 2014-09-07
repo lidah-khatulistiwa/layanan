@@ -6,7 +6,7 @@
 				<!-- BEGIN LOGO -->
 				<a class="brand" href="index.php">
 				<span>
-					ADMINISTRATOR
+					HALAMAN ADMINISTRATOR
 				</span>	
 				</a>
 				<!-- END LOGO -->

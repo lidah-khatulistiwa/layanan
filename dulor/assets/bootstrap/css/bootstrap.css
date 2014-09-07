@@ -1645,6 +1645,7 @@ select:focus:invalid:focus {
 .form-actions:after {
   clear: both;
 }
+.form-actions .alay {font-size: 11px; color: #c00;}
 
 .help-block,
 .help-inline {

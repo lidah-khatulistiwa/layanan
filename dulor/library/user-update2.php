@@ -11,6 +11,7 @@ $email = $_POST['email'];
 $query = mysql_query("update user set password='$password',  email='$email' where user_id='$user_id'") or die(mysql_error());
 
 if ($query) {
-	header('location:../dashboard.php?hal=home');
+	echo '<script>window.location.assign("../dashboard.php?hal=home")</script>';
+
 }
 ?>

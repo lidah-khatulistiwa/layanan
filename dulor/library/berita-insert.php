@@ -19,6 +19,6 @@ $simpan2 = mysql_query("INSERT INTO berita VALUES ('$kondisi_to_sql')");
 
 mysql_query($simpan);
 
-header('location:../dashboard.php?hal=berita');
+echo '<script>window.location.assign("../dashboard.php?hal=berita")</script>';
 
 ?>

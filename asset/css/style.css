@@ -79,6 +79,14 @@ h7 {
 	font-family:'Open Sans',sans-serif;
 }
 
+h8 {
+  text-decoration: none;
+  color:#484949;
+	line-height:2em;
+  font-size: 14px;
+	font-family:'Open Sans',sans-serif;
+}
+
 h7:hover {
   -webkit-transition: all ease-in-out;
   -moz-transition: all ease-in-out;

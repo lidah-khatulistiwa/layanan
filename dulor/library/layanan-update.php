@@ -15,6 +15,7 @@ $tempat_layanan = $_POST['tempat_layanan'];
 $query = mysql_query("update layanan set jenis_layanan='$jenis_layanan',  syarat_layanan='$syarat_layanan', mekanisme_layanan='$mekanisme_layanan', waktu_layanan='$waktu_layanan', biaya_layanan='$biaya_layanan', tempat_layanan='$tempat_layanan' where id_layanan='$id_layanan'") or die(mysql_error());
 
 if ($query) {
-	header('location:../dashboard.php?hal=xlayanan');
+	echo '<script>window.location.assign("../dashboard.php?hal=xlayanan")</script>';
+
 }
 ?>

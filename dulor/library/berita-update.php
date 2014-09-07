@@ -11,6 +11,6 @@ $isi = $_POST['isi'];
 $query = mysql_query("update berita set judul='$judul',  isi='$isi' where id_berita='$id_berita'") or die(mysql_error());
 
 if ($query) {
-	header('location:../dashboard.php?hal=berita');
-}
+	echo '<script>window.location.assign("../dashboard.php?hal=berita")</script>';
+	}
 ?>

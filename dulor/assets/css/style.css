@@ -1343,6 +1343,12 @@ Box portlet
    border: 1px solid #fccb7e;
    border-top: 0;
 }
+.form-actions .alay 
+  {
+    font-size: 14px;
+    font-style: italic; 
+    color: #6d6868;
+  }
 
 .portlet.box.green .portlet-title {
   background-color: #35aa47;

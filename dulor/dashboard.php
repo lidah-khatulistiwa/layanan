@@ -34,12 +34,20 @@ include('library/header.php');
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
 	<div class="footer">
+		<div class="span10">
 			<?php
 				include "../setting/conf.php";
 				$query = mysql_query("select * from setting");
 				while ($buff = mysql_fetch_array($query)) 
 				{ echo $buff['copy_set']; }
 		    ?>
+		</div>
+		<div class="span2">Ip Address : 
+			<?php
+				echo $_SERVER['REMOTE_ADDR'];
+			?>
+		</div>
+		
 		<div class="span pull-right">
 			<span class="go-top"><i class="icon-angle-up"></i></span>
 		</div>

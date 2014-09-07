@@ -336,9 +336,6 @@ $data = mysql_fetch_array($query);
                                  <h4><i class="icon-reorder"></i>Admin Notes</h4>
                                  <div class="tools">
                                     <a href="javascript:;" class="collapse"></a>
-                                    <a href="#portlet-config" data-toggle="modal" class="config"></a>
-                                    <a href="javascript:;" class="reload"></a>
-                                    <a href="javascript:;" class="remove"></a>
                                  </div>
                               </div>
                               <div class="portlet-body form">
@@ -354,6 +351,7 @@ $data = mysql_fetch_array($query);
                                     </div>  
                                     <div class="form-actions">
                                        <button type="submit" name="submit" value="Simpan" class="btn blue"><i class="icon-ok"></i> Simpan Catatan</button>
+                                    	<div class="text-right alay">Last Update : <?php echo $data['tgl_catatan']; ?> </div>
                                     </div>
                                  </form>
                                  <!-- END FORM-->  

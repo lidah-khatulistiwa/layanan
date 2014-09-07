@@ -124,8 +124,8 @@
 
               <li class="item">
                 <a href="">
-                  <h2 data-type="mText" class="itcircle-list-item">Nomer Telepon Penting</h2>
-                  <p data-type="sText" class="itcircle-list-item">Daftar Nomer Telepon Penting / Darurat </p>
+                  <h2 data-type="mText" class="itcircle-list-item">Nomor Telepon Penting</h2>
+                  <p data-type="sText" class="itcircle-list-item">Daftar Nomor Telepon Penting / Darurat </p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -150,7 +150,7 @@
     <div class="row">
       <div class="span12">
         <div class="span6">
-          <strong><h7>Nomer Telepon Penting / Darurat</h7></strong>
+          <strong><h7>Nomor Telepon Penting / Darurat</h7></strong>
           <br>
           <ul>
                 <?php
@@ -178,9 +178,9 @@
                     $hasil = mysql_query($query);
                     while ($qtabel = mysql_fetch_assoc($hasil))
                       {
-                        echo '<li><h4>';
+                        echo '<li><h8>';
                         echo '<a href="main.php?hal=layanan-detail2&id_layanan='.$qtabel['id_layanan'].'" target="_blank"><span><strong>'.$qtabel['jenis_layanan'].'</strong></span></a>';
-                        echo '</h4></li>';
+                        echo '</h8></li>';
                       }
                 ?>
         </div>

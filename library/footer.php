@@ -61,7 +61,7 @@ $data = mysql_fetch_array($query);
     </div>
     <div class="footer_sep"></div>
   </div>
-  <div class="copyright text-center">
+  <div class="copyright pull-right span5">
     <?php
         include "setting/conf.php";
         $query = mysql_query("select * from setting");

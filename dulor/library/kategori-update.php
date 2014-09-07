@@ -11,6 +11,7 @@ $nama_kat = $_POST['nama_kat'];
 $query = mysql_query("update kategori set nama_kat='$nama_kat' where id_kat='$id_kat'") or die(mysql_error());
 
 if ($query) {
-	header('location:../dashboard.php?hal=kategori');
+	echo '<script>window.location.assign("../dashboard.php?hal=kategori")</script>';
+
 }
 ?>

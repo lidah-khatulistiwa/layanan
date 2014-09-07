@@ -1,5 +1,5 @@
     <div class="row container-fluid header_bh">
-      <div class="pull-left aww col-xs-6">
+      <div class="pull-right span5 col-xs-12">
         <p>
           <i class="pi-header-block-icon icon-phone pi-icon-base pi-icon-square"></i>
           Telepon: 
@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div class="pull-left">
+      <div class="pull-right span4 col-xs-12">
         <p>
           <i class="pi-header-block-icon icon-phone pi-icon-base pi-icon-square"></i>
           E-Mail: 
@@ -68,7 +68,7 @@
                       ?>
                     </ul>
                   </li>
-                  <li><a href="main.php?hal=telepon" class="menu_navigation"><span>Nomer Darurat</span></a></li>
+                  <li><a href="main.php?hal=telepon" class="menu_navigation"><span>Nomor Darurat</span></a></li>
                   <li><a href="main.php?hal=kontak" class="menu_navigation"><span>Kontak Kami</span></a></li>
                 </ul>
               </div>

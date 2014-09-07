@@ -12,6 +12,7 @@ $level = $_POST['level'];
 $query = mysql_query("update user set password='$password',  email='$email', level='$level' where user_id='$user_id'") or die(mysql_error());
 
 if ($query) {
-	header('location:../dashboard.php?hal=user');
+	echo '<script>window.location.assign("../dashboard.php?hal=user")</script>';
+
 }
 ?>

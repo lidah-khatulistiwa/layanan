@@ -20,7 +20,7 @@ $simpan = "INSERT INTO user SET 	username='$_POST[name]',
 $simpan2 = mysql_query("INSERT INTO user VALUES ('$kondisi_to_sql')");
 
 mysql_query($simpan);
+echo '<script>window.location.assign("../dashboard.php?hal=user")</script>';
 
-header('location:../dashboard.php?hal=user');
 
 ?>
