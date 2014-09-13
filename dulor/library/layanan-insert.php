@@ -17,7 +17,8 @@ $simpan = "INSERT INTO layanan SET 	jenis_layanan= '$_POST[jenis_layanan]',
 									mekanisme_layanan  = '$_POST[mekanisme_layanan]',
 									waktu_layanan  = '$_POST[waktu_layanan]',
 									biaya_layanan  = '$_POST[biaya_layanan]',
-									tempat_layanan  = '$_POST[tempat_layanan]'
+									tempat_layanan  = '$_POST[tempat_layanan]',
+									telp_layanan ='$_POST[telp_layanan]'
 									";
 
 $simpan2 = mysql_query("INSERT INTO layanan VALUES ('$kondisi_to_sql')");

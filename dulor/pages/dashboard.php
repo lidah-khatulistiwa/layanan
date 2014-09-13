@@ -26,14 +26,14 @@
 			echo '</a>';
 
 			//lihat berita
-			echo '<a href="#">';
+			echo '<a href="dashboard.php?hal=shortcut">';
 				echo '<div class="tile bg-green">';
 					echo '<div class="tile-body">';
 						echo '<i class="icon-tasks"></i>';
 					echo '</div>';
 					echo '<div class="tile-object">';
 						echo '<div class="name">';
-							echo 'Lihat Berita';
+							echo 'Shortcut Layanan';
 						echo '</div>';
 					echo '</div>';
 				echo '</div>';
@@ -89,7 +89,7 @@
 					echo '</div>';
 					echo '<div class="tile-object">';
 						echo '<div class="name">';
-							echo 'Tambah Berita';
+							echo 'Administrator';
 						echo '</div>';
 					echo '</div>';
 				echo '</div>';
@@ -183,14 +183,14 @@
 				echo '</a>';
 
 				//lihat berita
-				echo '<a href="#">';
+				echo '<a href="dashboard.php?hal=shortcut">';
 					echo '<div class="tile bg-green">';
 						echo '<div class="tile-body">';
 							echo '<i class="icon-tasks"></i>';
 						echo '</div>';
 						echo '<div class="tile-object">';
 							echo '<div class="name">';
-								echo 'Lihat Berita';
+								echo 'Shortcut Layanan';
 							echo '</div>';
 						echo '</div>';
 					echo '</div>';
@@ -248,7 +248,7 @@
 						echo '</div>';
 						echo '<div class="tile-object">';
 							echo '<div class="name">';
-								echo 'Tambah Berita';
+								echo 'Admin';
 							echo '</div>';
 						echo '</div>';
 					echo '</div>';

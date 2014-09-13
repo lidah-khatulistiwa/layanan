@@ -1,6 +1,7 @@
 <?php 
 include "../setting/conf.php"; 
 $id_layanan = $_GET['id_layanan'];
+$id_layanan = mysql_real_escape_string ($id_layanan);
 
 $query = mysql_query("select * from layanan where id_layanan='$id_layanan'") or die(mysql_error());
 
@@ -27,10 +28,23 @@ $data = mysql_fetch_array($query);
                                           <span class="help-inline">Jenis Layanan</span>
                                        </div>
                                     </div>
+
                                     <div class="control-group">
                                        <label class="control-label" >Kategori Layanan</label>
                                           <div class="controls">
-                                             <input type="text" name="kat_layanan" placeholder="jenis layanan" class="m-wrap span12" value="<?php echo $data['kat_layanan']; ?>" disabled/>
+                                             <select class="span12 chosen" data-placeholder="<?php echo $data['kat_layanan']; ?>" value="<?php echo $data['kat_layanan']; ?>" tabindex="1" name="kat_layanan">
+                                                <option value="<?php echo $data['kat_layanan']; ?>"><?php echo $data['kat_layanan']; ?></option>
+                                                <?php
+                                                   $alay = $data['kat_layanan'];
+                                                   $query = "SELECT * from kategori WHERE nama_kat!='$alay'";
+                                                   $hasil = mysql_query($query);
+                                                   while ($qtabel = mysql_fetch_assoc($hasil))
+                                                   {
+                                       
+                                                      echo '<option value="'.$qtabel['nama_kat'].'">'.$qtabel['nama_kat'].'</option>';
+                                                     }
+                                                ?>
+                                             </select>
                                              <span class="help-inline">Kategori Layanan</span>
                                           </div>
                                     </div>
@@ -39,7 +53,7 @@ $data = mysql_fetch_array($query);
                                     <div class="control-group">
                                        <label class="control-label">Syarat Layanan</label>
                                        <div class="controls">
-                                          <textarea class="span12 wysihtml5 m-wrap" rows="6" name="syarat_layanan"> <?php echo $data['syarat_layanan']; ?> </textarea>
+                                          <textarea class="span12 ckeditor m-wrap" rows="6" name="syarat_layanan"> <?php echo $data['syarat_layanan']; ?> </textarea>
                                           <span class="help-inline">Persyaratan Layanan</span>
                                        </div>
                                     </div>
@@ -55,7 +69,7 @@ $data = mysql_fetch_array($query);
                                     <div class="control-group">
                                        <label class="control-label">Waktu Layanan</label>
                                        <div class="controls">
-                                          <input type="text" name="waktu_layanan" placeholder="5 hari kerja" class="m-wrap span12" value="<?php echo $data['waktu_layanan']; ?>"/>
+                                          <textarea class="span12 ckeditor m-wrap" rows="3" name="waktu_layanan"><?php echo $data['waktu_layanan']; ?> </textarea>
                                           <span class="help-inline">Jangka Waktu Penyelesaian</span>
                                        </div>
                                     </div>
@@ -63,7 +77,7 @@ $data = mysql_fetch_array($query);
                                     <div class="control-group">
                                        <label class="control-label">Biaya Layanan</label>
                                        <div class="controls">
-                                          <input type="text" name="biaya_layanan" placeholder="20000" class="m-wrap span12" value="<?php echo $data['biaya_layanan']; ?>"/>
+                                          <textarea class="span12 ckeditor m-wrap" rows="3" name="biaya_layanan"><?php echo $data['biaya_layanan']; ?> </textarea>
                                           <span class="help-inline">Biaya / Tarif Layanan</span>
                                        </div>
                                     </div>
@@ -75,6 +89,15 @@ $data = mysql_fetch_array($query);
                                           <span class="help-inline">Tempat Pengurusan Layanan</span>
                                        </div>
                                     </div>
+
+                                    <div class="control-group">
+                                       <label class="control-label">Telpon Layanan</label>
+                                       <div class="controls">
+                                          <input type="text" name="telp_layanan" value="<?php echo $data['telp_layanan']; ?>" class="m-wrap span12"/>
+                                          <span class="help-inline">Nomer Telepon Layanan</span>
+                                       </div>
+                                    </div>
+
                                             
                                     <div class="form-actions">
                                        <button type="submit" name="submit" value="Simpan" class="btn blue"><i class="icon-ok"></i> Simpan Layanan</button>

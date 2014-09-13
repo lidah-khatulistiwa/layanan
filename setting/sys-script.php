@@ -134,6 +134,22 @@
               ?>
                 <?php include "../dulor/library/script-1.php" ?>
 
+                <?php 
+                break;
+                case 'shortcut':
+                  if(!file_exists("../dulor/library/script-1.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "../dulor/library/script-1.php" ?>
+
+                <?php 
+                break;
+                case 'shortcut-kategori':
+                  if(!file_exists("../dulor/library/script-1.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "../dulor/library/script-1.php" ?>
+
 
               
 

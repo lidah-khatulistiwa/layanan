@@ -72,8 +72,23 @@
                   if(!file_exists("../dulor/pages/user.php")) 
                     die ("Halaman tidak tersedia");
               ?>
-               
                 <?php include "../dulor/pages/user.php" ?>
+
+              <?php 
+                break;
+                case 'shortcut' :
+                  if(!file_exists("../dulor/pages/shortcut.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "../dulor/pages/shortcut.php" ?>
+
+                <?php 
+                break;
+                case 'shortcut-kategori' :
+                  if(!file_exists("../dulor/pages/shortcut-kategori.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "../dulor/pages/shortcut-kategori.php" ?>
                 
               <?php 
                 break; 

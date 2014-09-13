@@ -1438,10 +1438,10 @@ Mini chart containers
 Custom icon buttons
 ***/
 .icon-btn {
-  height: 70px;
+  height: 100px;
   width: 50px;
-  margin: 10px 0px 10px 0px;
-  border: 1px solid #ddd;
+  margin: 10px 10px 10px 0px;
+  border: 5px solid #ddd;
   padding: 16px 0px 0px 0px;
   background-color: #fafafa !important;
   background-image: none !important;
@@ -1468,7 +1468,7 @@ Custom icon buttons
 
 .icon-btn:hover {
   text-decoration: none !important;
-  border-color: #999 !important;
+  border-color: #000 !important;
   color: #444 !important;
   text-shadow: 0 1px 0px rgba(255, 255, 255, 1) !important;
   -webkit-transition: all 0.3s ease !important;

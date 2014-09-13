@@ -28,9 +28,7 @@
 										<tr>
 											<th class="hidden-480">Jenis Layanan</th>
 											<th class="hidden-480">Kategori</th>
-											<th class="hidden-480">Jangka Waktu</th>
-											<th class="hidden-480">Tarif</th>
-											<th class="hidden-480">Aksi</th>
+											<th class="hidden-480" width="120px">Aksi</th>
 											
 										</tr>
 									</thead>
@@ -42,12 +40,10 @@
 										<tr class="odd gradeX">
 											<td class="hidden-480"><?php echo $buff['jenis_layanan']; ?></td>
 											<td class="hidden-480"><?php echo $buff['kat_layanan']; ?></td>
-											<td class="hidden-480"><?php echo $buff['waktu_layanan']; ?></td>
-											<td class="hidden-480">Rp <?php echo $buff['biaya_layanan']; ?></td>
 											<td class="center hidden-480">
-												<a href="dashboard.php?hal=lihat-layanan&id_layanan=<?php echo $buff['id_layanan']; ?>" class="btn mini green-stripe">View</a>
-												<a href="dashboard.php?hal=ubah-layanan&id_layanan=<?php echo $buff['id_layanan']; ?>" class="btn mini purple"><i class="icon-edit"></i> Edit</a>
-												<a href="library/layanan-delete.php?id_layanan=<?php echo $buff['id_layanan']; ?>" class="btn mini black"><i class="icon-trash"></i> Delete</a>
+												<a href="../main.php?hal=layanan-detail&id_layanan=<?php echo $buff['id_layanan']; ?>" target="_blank" class="btn mini green-stripe"><i class="icon-search" alt="lihat" title="lihat"></i></a>
+												<a href="dashboard.php?hal=ubah-layanan&id_layanan=<?php echo $buff['id_layanan']; ?>" class="btn mini purple"><i class="icon-edit" alt="Edit" title="Edit"></i></a>
+												<a href="library/layanan-delete.php?id_layanan=<?php echo $buff['id_layanan']; ?>" class="btn mini black"><i class="icon-trash" alt="Delete" title="Delete"></i></a>
 											</td>
 											<?php
 		                                        }

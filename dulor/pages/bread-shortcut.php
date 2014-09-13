@@ -1,6 +1,6 @@
 <!-- BEGIN PAGE TITLE & BREADCRUMB-->			
 						<h3 class="page-title">
-							Berita				
+							Admin Shortcut				
 							<small>
 							</small>
 						</h3>
@@ -11,7 +11,7 @@
 								<i class="icon-angle-right"></i>
 							</li>
 							<li>
-								<a href="#">Berita</a>
+								<a href="#">Shortcut</a>
 							</li>
 						</ul>
 						<!-- END PAGE TITLE & BREADCRUMB-->

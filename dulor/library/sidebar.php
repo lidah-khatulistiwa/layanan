@@ -27,6 +27,7 @@
 						echo '</a>';
 						echo '<ul class="sub">';
 							echo '<li ><a href="dashboard.php?hal=xlayanan">Lihat Layanan</a></li>';
+							echo '<li ><a href="dashboard.php?hal=shortcut">Shortcut Layanan</a></li>';
 							echo '<li ><a href="dashboard.php?hal=tambah-layanan">Tambah Layanan</a></li>';
 						echo '</ul>';
 					echo '</li>';
@@ -100,6 +101,7 @@
 							echo '</a>';
 							echo '<ul class="sub">';
 								echo '<li ><a href="dashboard.php?hal=xlayanan">Lihat Layanan</a></li>';
+								echo '<li ><a href="dashboard.php?hal=shortcut">Shortcut Layanan</a></li>';
 								echo '<li ><a href="dashboard.php?hal=tambah-layanan">Tambah Layanan</a></li>';
 							echo '</ul>';
 						echo '</li>';

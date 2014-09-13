@@ -190,12 +190,20 @@
 
               <?php 
                 break;
-                case '0x61/0x64/0x6e/0x73/0x6e':
-                  if(!file_exists("pages/lap-ctf.php")) 
+                case 'shortcut':
+                  if(!file_exists("../dulor/pages/bread-shortcut.php")) 
                     die ("Halaman tidak tersedia");
               ?>
-                <?php include "pages/lap-ctf.php" ?>
+                <?php include "../dulor/pages/bread-shortcut.php" ?>
 
+                <?php 
+                break;
+                case 'shortcut-kategori':
+                  if(!file_exists("../dulor/pages/bread-shortcut-kategori.php")) 
+                    die ("Halaman tidak tersedia");
+              ?>
+                <?php include "../dulor/pages/bread-shortcut-kategori.php" ?>
+                
              
 
                             

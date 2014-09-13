@@ -22,11 +22,17 @@ $data = mysql_fetch_array($query);
                   <?php
                   include "setting/conf.php";
                   $kat_layanan = $_GET['kat_layanan'];
+                  $kat_layanan = mysql_real_escape_string ($kat_layanan);
                   $query = "SELECT * FROM layanan WHERE kat_layanan='$kat_layanan' ";
                     $hasil = mysql_query($query);
-                    while ($qtabel = mysql_fetch_assoc($hasil))
+                    $hasil = mysql_real_escape_string($hasil);
+                    while 
+                      (
+                        $qtabel = mysql_fetch_assoc($hasil);
+                        $qtabel = mysql_real_escape_string ($qtabel);
+                      )
                       {
-                        echo '<div class="span4"><p><a href="main.php?hal=layanan-detail&id_layanan='.$qtabel['id_layanan'].'" class="btn btn-large btn-warning">'.$qtabel['jenis_layanan'].'</a></p></div>';
+                        echo '<div class="span4"><p><a href="main.php?hal=layanan-detail&id_layanan='.$qtabel['id_layanan'].'" class="btn btn-large btn-warning"><h9>'.$qtabel['jenis_layanan'].'</h9></a></p></div>';
                       }
                   ?>
           </div>

@@ -13,7 +13,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Kartu Keluarga </h2>
-                  <p data-type="sText" class="itcircle-list-item">Layanan Pembuatan Kartu Keluarga (KK)</p>
+                  <p data-type="sText" class="itcircle-list-item">Pembuatan Kartu Keluarga (KK)</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -29,7 +29,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Akte Kelahiran</h2>
-                  <p data-type="sText" class="itcircle-list-item">Layanan Pembuatan Akte Kelahiran</p>
+                  <p data-type="sText" class="itcircle-list-item">Pembuatan Akte Kelahiran</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -45,7 +45,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Surat Izin Tempat Usaha</h2>
-                  <p data-type="sText" class="itcircle-list-item">Layanan Pembuatan Surat Izin Tempat Usaha (SITU)</p>
+                  <p data-type="sText" class="itcircle-list-item">Pembuatan Surat Izin Tempat Usaha (SITU)</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -61,7 +61,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Surat Izin Usaha Perdagangan</h2>
-                  <p data-type="sText" class="itcircle-list-item"><br />Layanan Pembuatan Surat Izin Usaha Perdagangan (SIUP)</p>
+                  <p data-type="sText" class="itcircle-list-item"><br />Pembuatan Surat Izin Usaha Perdagangan (SIUP)</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -77,7 +77,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Kartu Tanda Penduduk</h2>
-                  <p data-type="sText" class="itcircle-list-item">Layanan Pembuatan Kartu Tanda Penduduk (KTP)</p>
+                  <p data-type="sText" class="itcircle-list-item">Pembuatan Kartu Tanda Penduduk (KTP)</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -93,7 +93,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Kartu Pencari Kerja</h2>
-                  <p data-type="sText" class="itcircle-list-item">Layanan Pembuatan Kartu Pencari Kerja (Kartu Kuning)</p>
+                  <p data-type="sText" class="itcircle-list-item">Pembuatan Kartu Pencari Kerja (Kartu Kuning)</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -109,7 +109,7 @@
               <li class="item">
                 <a href="">
                   <h2 data-type="mText" class="itcircle-list-item">Pelayanan Administratif Kelurahan</h2>
-                  <p data-type="sText" class="itcircle-list-item"><br>Layanan Administratif Kelurahan</p>
+                  <p data-type="sText" class="itcircle-list-item"><br>Administratif Kelurahan</p>
                   <span data-type="icon" class="itcircle-list-icon itcircle-list-icon-care itcircle-list-item">
                     <div>
                       <center><br>
@@ -161,7 +161,7 @@
                     while ($qtabel = mysql_fetch_assoc($hasil))
                       {
                         echo '<li>';
-                        echo '<h4><strong>'.$qtabel['jenis_layanan'].' : </strong> '.$qtabel['syarat_layanan'].'</h4>';
+                        echo '<h8><strong>'.$qtabel['jenis_layanan'].' : </strong> '.$qtabel['telp_layanan'].'</h8>';
                         echo '</li>';
                       }
                 ?>

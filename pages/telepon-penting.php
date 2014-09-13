@@ -23,7 +23,7 @@ $data = mysql_fetch_array($query);
                     $hasil = mysql_query($query);
                     while ($qtabel = mysql_fetch_assoc($hasil))
                       {
-                        echo '<div class="span4"><p><a href="#" class="btn btn-large btn-warning">'.$qtabel['jenis_layanan'].'<br>'.$qtabel['syarat_layanan'].'</a></p></div>';
+                        echo '<div class="span4"><p><a href="#" class="btn btn-large btn-warning">'.$qtabel['jenis_layanan'].'<br>'.$qtabel['telp_layanan'].'</a></p></div>';
                       }
                   ?>
           </div>
